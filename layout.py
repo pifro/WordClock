@@ -77,3 +77,6 @@ class Layout:
 
     def size(self):
         return self.rows.find("_")
+
+    def illuminate(self, word):
+        return ""

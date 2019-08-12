@@ -8,7 +8,8 @@ from pprint import pprint
 words = [
     "JULIE",  "MARTHE", "MARIE-DO", "PIERRE", "MARIE",
     "THERESE", "MICHELE", "CHRISTINE", "MALO", "ALBANE",
-    "GREGOIRE", "AUGUSTIN", "BRIEUC", "ELOI", "INES", "LOUIS"]
+    "GREGOIRE", "AUGUSTIN", "BRIEUC", "ELOI", "INES", "LOUIS",
+    "LAURE", "JEAN-MARIE", "BERTRAND"]
 
 WIDTH = 11
 HEIGHT = 10
@@ -116,7 +117,7 @@ def geneticOptimizer(words, numGen, popSize=100, selectSize=5):
 
 if __name__ == "__main__":
 
-    words = geneticOptimizer(words, 100, 1000, 20)
+    words = geneticOptimizer(words, 100, 1000, 100)
     print(words)
     print(createLayout(words))
 
