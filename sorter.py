@@ -36,7 +36,7 @@ def swapWords(words):
     size = len(words)
     a = randint(0, size - 1)
     b = randint(0, size - 1)
-    swapped = words.copy()
+    swapped = list(words)
     swapped[a] = words[b]
     swapped[b] = words[a]
     return swapped
