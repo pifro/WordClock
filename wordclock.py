@@ -10,13 +10,11 @@ if __name__ == "__main__":
     
     words = config.words
     
-    words = sorter.geneticSorter(words, numGen=25, popSize=1000, selectSize=10)
+    words = sorter.geneticSorter(words, numGen=25, popSize=500, selectSize=10)
     print(words)    
     grid = layout.createLayout(words)
     for word in words:
         print(grid.illuminateWord(word))
-        print(grid.illuminateIndexes(grid.getIndexesForWord(word)))
-
 
     print("*** LAYOUT ***")
     print("")
